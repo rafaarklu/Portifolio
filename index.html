@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #f4f4f9;
+            color: #333;
+            border: 10px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background: #34495e;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .main-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .about-me, .languages, .contact-info, .tools {
+            margin: 40px 0;
+        }
+
+        .about-me h2, .languages h2, .contact-info h2, .tools h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .about-me p, .languages p, .contact-info p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        .profile-picture {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            margin-bottom: 60px;
+        }
+
+        .profile-picture img {
+            width: 250px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .highlight {
+            display: block;
+            background: #3498db;
+            color: #fff;
+            padding: 15px 30px;
+            margin: 15px auto;
+            border-radius: 5px;
+            transition: transform 0.2s, background 0.2s;
+            cursor: pointer;
+            text-align: center;
+            min-width: 250px;
+            max-width: 300px;
+        }
+
+        .highlight:hover {
+            transform: scale(1.1);
+            background: #2980b9;
+        }
+
+        .contact-button {
+            display: block;
+            background: #2ecc71;
+            color: #fff;
+            padding: 15px 30px;
+            margin: 15px auto;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.2s, background 0.2s;
+            min-width: 250px;
+            max-width: 300px;
+        }
+
+        .contact-button:hover {
+            transform: scale(1.1);
+            background: #27ae60;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: #ecf0f1;
+            margin-top: 40px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 2rem;
+        }
+
+        .pag2 {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .languages {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .texto_centro {
+            text-align: center;
+            margin: 50px;
+        }
+
+        .nome_centro {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <p>Bem-vindo ao meu Portfólio pessoal!</p>
+    </header>
+    <div>
+        <h1 class="nome_centro">Rafael Arkchimor Lucena</h1>
+        <div class="profile-picture">
+            <img src="eu.png" alt="Minha foto de perfil">
+        </div>
+    </div>
+    <div class="main-container pag2">
+        <section class="about-me" id="about">
+            <h2 class="titulo">Sobre Mim</h2>
+            <p>Meu nome é Rafael Arkchimor Lucena, sou um estudante de Ciência de Dados na ESPM (Escola Superior de Propaganda e Marketing). Sou um entusiasta da tecnologia focado em me tornar um desenvolvedor. Adquiri um profundo conhecimento em Python, JavaScript e SQL, além de habilidades práticas em ferramentas como Figma, Excel, Astah, GitHub e Tableau Prep Builder.</p>
+        </section>
+
+        <section class="languages" id="languages">
+            <h2 class="titulo">Idiomas</h2>
+            <p class="highlight">Português (fluência)</p>
+            <p class="highlight">Inglês (avançado)</p>
+        </section>
+
+        <section class="tools" id="tools">
+            <h2 class="titulo">Ferramentas</h2>
+            <p class="highlight">Figma</p>
+            <p class="highlight">Excel</p>
+            <p class="highlight">Astah</p>
+            <p class="highlight">GitHub</p>
+            <p class="highlight">Tableau Prep Builder</p>
+        </section>
+
+        <section class="contact-info" id="contact">
+            <h2 class="titulo">Contato</h2>
+            <a class="contact-button"> Email: rafa.arklu@gmail.com</a>
+            <a class="contact-button" href="https://www.linkedin.com/in/rafael-lucena-0273b82b3/" target="_blank">LinkedIn: https://www.linkedin.com/in/rafael-lucena-0273b82b3/</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
